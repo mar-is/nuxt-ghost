@@ -29,7 +29,6 @@ export default {
   },
 
   async asyncData(ctx) {
-    console.log(Object.keys(ctx))
     const posts = await getAllPosts()
     return { posts }
   }
